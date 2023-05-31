@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(todoRoutes);
 
-const uri: string = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_DB}.5fraisw.mongodb.net/?retryWrites=true&w=majority`;
+const uri: string = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_DB}.mongodb.net/?retryWrites=true&w=majority`;
 
 mongoose
   .connect(uri)
